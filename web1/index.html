@@ -1,28 +1,40 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh">
     <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Minecraft Server">
+        <meta name="keywords" content="Minecraft, 我的世界, 我的世界服务器, Minecraft 服务器">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
         <title>Minecraft 服务器</title>
+        <link rel="icon" href="img\logo.png">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="banner">
-            <div class="navbar">
-                <img src="logo.png" class="logo">
-                <ul>
-                    <li><a href="#"></a>社区</li>
-                    <li><a href="#"></a>百科</li>
-                    <li><a href="#"></a>商城</li>
-                    <li><a href="#"></a>邮箱</li>
-                    <li><a href="#"></a>关于</li>
-                </ul>
-            </div>
-            <div class="content">
+        <header>
+            <a href="#" class="logo">WorldMC</a>
+            <ul>
+                <li><a href="#">社区</a></li>
+                <li><a href="#">百科</a></li>
+                <li><a href="#">商城</a></li>
+                <li><a href="#">邮箱</a></li>
+                <li><a href="#">关于</a></li>
+            </ul>
+        </header>
+        <section class="banner">
+            <section class="content">
                 <hl>我的服务器</hl>
                 <p>阿部：您把自己称为“平面造型设计师”，请问您是怎样走上设计这条路的？<br>另外，您认为自己作为设计师的出发点在哪里？</p>
                 <div>
                     <button type="button"><span></span>查看更多</button>
                     <button type="button"><span></span>关于我们</button>
                 </div>
-            </div>
-        </div>
+            </section>
+        </section>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+               var header = document.querySelector("header");
+               header.classList.toggle("sticky", window.scrollY > 0); 
+            })
+        </script>
     </body>
 </html>
