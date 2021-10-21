@@ -46,10 +46,6 @@ header.sticky .logo {
     color: black;
 }
 
-header .logo span {
-    transition: 0.5s;
-}
-
 header .logo:hover {
     color: white;
     letter-spacing: 4.5px;
