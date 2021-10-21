@@ -1,15 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="zh">
     <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Minecraft 世界 官方网站">
-        <meta name="keywords" content="Minecraft, 我的世界, 我的世界服务器, Minecraft 服务器, 世界, WorldMC">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Minecraft 世界 官方网站"/>
+        <meta name="keywords" content="Minecraft, 我的世界, 我的世界服务器, Minecraft 服务器, 世界, WorldMC"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
         <title>世界 | WorldMC</title>
-        <link rel="icon" href="img\favicon.ico">
-        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img\favicon.ico"/>
+        <link rel="stylesheet" href="style.css"/>
     </head>
-    <body>
+    <body ondragstart="return false">
         <header>
             <a href="#" class="logo">WorldMC</a>
             <ul>
@@ -27,7 +29,7 @@
             </section>
         </section>
         <script type="text/javascript">
-            window.addEventListener("scroll", function(){
+            window.addEventListener("scroll", function() {
                var header = document.querySelector("header");
                header.classList.toggle("sticky", window.scrollY > 0); 
             })
