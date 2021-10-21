@@ -40,6 +40,7 @@ header .logo {
     text-transform: uppercase;
     letter-spacing: 3px;
     transition: 0.6s;
+    cursor: default;
 }
 
 header.sticky .logo {
@@ -79,9 +80,21 @@ header ul li a {
     transition: 0.6s;
 }
 
+header ul li a:hover {
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.555),
+                 0 0 20px rgba(255, 255, 255, 0.555),
+                 0 0 40px rgba(255, 255, 255, 0.555),
+                 0 0 80px rgba(255, 255, 255, 0.555),
+                 0 0 120px rgba(255, 255, 255, 0.555),
+                 0 0 160px rgba(255, 255, 255, 0.555);
+}
+
 header.sticky ul li a {
     color: black;
 }
+
+/* header.sticky ul li a:hover */
 
 .banner {
     position: relative;
